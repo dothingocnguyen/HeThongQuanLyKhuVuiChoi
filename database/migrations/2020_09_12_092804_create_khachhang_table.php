@@ -23,8 +23,8 @@ class CreateKhachhangTable extends Migration
             $table->string("kh_sodienthoai");
             $table->string("kh_email");
             $table->date("kh_ngaysinh");
-            $table->bigInteger("lkh_id")->unsigned();
-            $table->foreign('lkh_id')->references('lkh_id')->on('loaikhachhang')->onDelete('cascade');
+            $table->bigInteger("loaikh_id")->unsigned();
+            $table->foreign('loaikh_id')->references('loaikh_id')->on('loaikhachhang')->onDelete('cascade');
             $table->timestamps();
         });
     }

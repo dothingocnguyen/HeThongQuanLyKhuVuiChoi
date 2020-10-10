@@ -14,7 +14,8 @@ class CreateLoaisanphamTable extends Migration
     public function up()
     {
         Schema::create('loaisanpham', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('loaisp_id');
+            $table->string("loaisp_ten");
             $table->timestamps();
         });
     }

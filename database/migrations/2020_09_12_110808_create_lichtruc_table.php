@@ -14,7 +14,9 @@ class CreateLichtrucTable extends Migration
     public function up()
     {
         Schema::create('lichtruc', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('lt_id');
+            $table->string('lt_giobatdau');
+            $table->string('lt_gioketthuc');
             $table->timestamps();
         });
     }

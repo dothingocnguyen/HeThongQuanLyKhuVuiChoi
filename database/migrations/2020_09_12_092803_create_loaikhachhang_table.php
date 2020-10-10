@@ -14,8 +14,8 @@ class CreateLoaikhachhangTable extends Migration
     public function up()
     {
         Schema::create('loaikhachhang', function (Blueprint $table) {
-            $table->bigIncrements('lkh_id');
-            $table->string("lkh_ten");
+            $table->bigIncrements('loaikh_id');
+            $table->string("loaikh_ten");
             $table->timestamps();
         });
     }
